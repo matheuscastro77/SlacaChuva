@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 export const Main = styled.main`
   border: 2px solid #ececec;
-  height: 69.1vh;
+  height: 68.5vh;
   width: 16%;
-  margin-top: 8%;
   margin-right: 5%;
 `;
 
