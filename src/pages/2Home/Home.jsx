@@ -3,6 +3,7 @@ import { Main, H1, Container, DivButtons, ContainerButtons, Button, ButtonDownlo
 import BoxLeft from "../../components/BoxLeft/BoxLeft";
 import BoxRight from "../../components/BoxRight/BoxRight";
 import Video from "../../components/Video/Video";
+import Summary from "../../components/Summary/Summary";
 import Header from "../../components/Header/Header";
 import star from "../../assets/star.png"
 import doi from "../../assets/doi.png"
@@ -32,6 +33,7 @@ const Home = () => {
           <Video />
           <BoxRight />
         </Container>
+        <Summary />
       </Body>
     </Main>
   );

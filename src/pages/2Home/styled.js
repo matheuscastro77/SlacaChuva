@@ -39,7 +39,7 @@ export const Button = styled.button`
     border: 0px;
     background-color: #ED7839;
     border-radius: 5px;
-    height: 42px;
+    height: 3.8vh;
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.1rem;
@@ -53,7 +53,7 @@ export const ButtonDownload = styled.button`
     border: 0px;
     background-color: #ED7839;
     border-radius: 5px;
-    height: 42px;
+    height: 3.8vh;
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.1rem;
@@ -75,7 +75,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 92vh;
+    margin-bottom: 2%;
 `
 
 export const Body = styled.body`

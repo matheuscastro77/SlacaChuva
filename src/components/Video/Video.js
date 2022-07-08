@@ -3,7 +3,9 @@ import { Main } from './styled'
 
 const Video = () => {
   return (
-    <Main></Main>
+    <Main>
+      
+    </Main>
   )
 }
 
