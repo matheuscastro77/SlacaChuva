@@ -4,6 +4,10 @@ export const Main = styled.main`
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     height: 100vh;
     width: 12.5%;
+
+    img{
+        width: 90%;
+    }
 `
 
 export const Tittle = styled.div`

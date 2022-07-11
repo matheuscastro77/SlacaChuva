@@ -4,10 +4,12 @@ import BoxLeft from "../../components/BoxLeft/BoxLeft";
 import BoxRight from "../../components/BoxRight/BoxRight";
 import Video from "../../components/Video/Video";
 import Summary from "../../components/Summary/Summary";
+import Discussions from "../../components/Discussions/Discussions";
 import Header from "../../components/Header/Header";
 import star from "../../assets/star.png"
 import doi from "../../assets/doi.png"
 import download from "../../assets/download.png"
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -34,6 +36,8 @@ const Home = () => {
           <BoxRight />
         </Container>
         <Summary />
+        <Discussions />
+        <Footer />
       </Body>
     </Main>
   );

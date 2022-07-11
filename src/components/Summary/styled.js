@@ -6,7 +6,7 @@ export const Main = styled.main`
     margin: 0 auto;
     border: 1px solid #ECECEC;
     border-radius: 4px;
-    margin-bottom: 4%;
+    margin-bottom: 2%;
 
     :hover{
         cursor: pointer;
