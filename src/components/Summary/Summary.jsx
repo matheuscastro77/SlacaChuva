@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import GlobalStateContext from "../../context/GlobalStateContext";
 import { Main, TittleDiv, H3, DivText, Span, Button, P } from "./styled";
 
 const Summary = () => {
-  const [verMais, setVerMais] = useState(false);
-
-  console.log(verMais);
+  
+  const { verMais, setVerMais } = useContext(GlobalStateContext)
 
   return (
     <Main onClick={() => setVerMais(!verMais)}>

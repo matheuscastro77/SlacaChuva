@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import GlobalStateContext from "../../context/GlobalStateContext";
 import {
   H3,
   Main,
@@ -7,41 +8,108 @@ import {
   DivIcons,
   Border,
   Button,
+  ButtonFeedback,
+  ButtonFind,
   CommentsDiv,
   DivCenter,
+  SendButton,
+  ContainerOptionsComment,
   DivOptions,
+  DivInput,
+  P,
+  Label,
+  Input,
+  TextArea,
+  FooterTextArea,
+  ContainerTopicSend,
+  FeedbackCard
 } from "./styled";
 import icon1 from "../../assets/icone1.png";
 import icon2 from "../../assets/icone2.png";
 import icon3 from "../../assets/icone3.png";
 import cruz from "../../assets/cruz.png";
 import info from "../../assets/infos.png";
+import italico from "../../assets/italico.png";
+import negrito from "../../assets/negrito.png";
 import favoritar from "../../assets/favoritar.png";
 
+
 const Discussions = () => {
+  const { newTopic, setNewTopic, sendTopic, setSendTopic } =
+    useContext(GlobalStateContext);
+
+    const setState = () => {
+      setNewTopic(true)
+      setSendTopic(false)
+    }
+
   return (
     <Main>
       <TittleDiv>
         <H3>Discussões</H3>
       </TittleDiv>
-      <Container>
-        <h3>Compartilhe suas ideias ou dúvidas com os autores!</h3>
-        <DivIcons>
-          <img src={icon1} />
-          <img src={icon2} />
-          <img src={icon3} />
-        </DivIcons>
-        <p>
-          Sabia que o maior estímulo no desenvolvimento científico e cultural é
-          a curiosidade? Deixe seus questionamentos ou sugestões para o autor!
-        </p>
-      </Container>
-      <Border>
-        <Button>
-          {" "}
-          <img src={cruz} /> criar tópico
-        </Button>
-      </Border>
+      {newTopic ? 
+        <>
+        {sendTopic ? <ContainerTopicSend>
+          <h2>Seu tópico foi enviado com sucesso! :D</h2>
+          <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+          <ButtonFind>Descubra outros trabalhos!</ButtonFind>
+          <Border>
+            <ButtonFeedback onClick={() => setState ()}> criar novo tópico</ButtonFeedback>
+          </Border>
+          <FeedbackCard>
+
+          </FeedbackCard>
+        </ContainerTopicSend> : <> 
+          <P>
+            {" "}
+            Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores{" "}
+          </P>
+          <DivInput>
+            <Label>Assunto</Label>
+            <Input placeholder="Defina um tópico sucinto para notificar os autores..."></Input>
+            <Label>Conteúdo</Label>
+            <TextArea />
+            <ContainerOptionsComment>
+              <FooterTextArea>
+                <div>
+                  <button>
+                    <img src={negrito} />
+                  </button>
+                  <button>
+                    <img src={italico} />
+                  </button>
+                </div>
+              </FooterTextArea>
+              <SendButton onClick={() => setSendTopic(true)}>Enviar</SendButton>
+            </ContainerOptionsComment>
+          </DivInput>
+        </> }
+          
+        </>
+       : 
+        <>
+          <Container>
+            <h3>Compartilhe suas ideias ou dúvidas com os autores!</h3>
+            <DivIcons>
+              <img src={icon1} />
+              <img src={icon2} />
+              <img src={icon3} />
+            </DivIcons>
+            <p>
+              Sabia que o maior estímulo no desenvolvimento científico e
+              cultural é a curiosidade? Deixe seus questionamentos ou sugestões
+              para o autor!
+            </p>
+          </Container>
+          <Border>
+            <Button onClick={() => setNewTopic(true)}>
+              {" "}
+              <img src={cruz} /> criar tópico
+            </Button>
+          </Border>
+        </>
+      }
 
       <CommentsDiv>
         <DivCenter>
@@ -66,7 +134,7 @@ const Discussions = () => {
       </CommentsDiv>
 
       <CommentsDiv>
-      <DivCenter>
+        <DivCenter>
           <h4>Assunto da pergunta aparece aqui</h4>
           <h5>Carlos Henrique Santos</h5>
           <p>
@@ -87,7 +155,7 @@ const Discussions = () => {
             <button>4 reposta</button>
           </DivOptions>
         </DivCenter>
-        </CommentsDiv>
+      </CommentsDiv>
     </Main>
   );
 };

@@ -1,7 +1,7 @@
 import styled from "styled-components";
+import feedbackCard from "../../assets/feedbackCard.svg";
 
 export const Main = styled.main`
-    height: 78vh;
     width: 94%;
     margin: 0 auto;
     border: 1px solid #ECECEC;
@@ -19,6 +19,169 @@ export const TittleDiv = styled.div`
     align-items: center;
     border-bottom: 1px solid #ECECEC;
     width: 100%;
+`
+
+export const ContainerTopicSend = styled.div`
+    height: 56vh;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+
+    h2{
+        color: #ED7839;
+        font-size: 1.1rem;
+        font-weight: 700;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    p{
+        color: #595959;
+        font-weight: 400;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 0.9rem;
+    }
+`
+
+export const ButtonFind = styled.button`
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 1px solid #F48F44;
+    color: #F48F44;
+    margin: 2%;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+
+    :hover{
+        cursor: pointer;
+    }
+`
+
+export const ButtonFeedback = styled.button`
+    background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+    border: 0px;
+    width: 20%;
+    height: 3.5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: 5px;
+
+    :hover{
+        cursor: pointer;
+    }
+`
+
+export const FeedbackCard = styled.div`
+    background-image: url(${feedbackCard}) ;
+    background-size: contain;
+    width: 100%;
+    height: 29vh;
+    margin: 1% auto;
+`
+
+export const DivInput = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+`
+
+export const P = styled.p`
+    color: #5C5C5C;
+    font-size: 0.9rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+`
+
+export const Label = styled.label`
+    color: #ED7839;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 0.3%;
+    margin-top: 1%;
+`
+
+export const Input = styled.input`
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    color: #4D4D4D;
+    height: 2vh;
+    padding: 10px 10px 10px 20px;
+    outline: 0px;
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+
+    ::placeholder{
+        color: #4D4D4D;
+    }
+`
+
+export const TextArea = styled.textarea`
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 0px 0px;
+    outline: 0px;
+    color: #4D4D4D;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    height: 10vh;
+    padding: 10px 10px 10px 20px;
+    text-align: start;
+`
+
+export const FooterTextArea = styled.div`
+    margin-bottom: 1.5%;
+    background-color: #EAF1F2;
+    border: 1px solid #CCCCCC;
+    border-top: 0px;
+    height: 3vh;
+    display: flex;
+    justify-content: space-between;
+    width: 88%;
+    border-radius: 0px 0px 0px 3px ;
+
+    div{
+        display: flex;
+        width: 8%;
+        justify-content: space-around;
+
+        button{
+            background-color: transparent;
+            border: 0px;
+
+            :hover{
+                cursor: pointer;
+            }
+        }
+    }
+`
+
+export const ContainerOptionsComment = styled.div`
+    display: flex;
+`
+
+export const SendButton = styled.button`
+    background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+    border: 0px;
+    width: 12%;
+    height: 3.1vh;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 0px 0px 3px 0px;
+
+    :hover{
+        cursor: pointer;
+    }
 `
 
 export const H3 = styled.h3`
@@ -87,8 +250,8 @@ export const Button = styled.button`
 `
 
 export const CommentsDiv = styled.div`
-    width: 98%;
-    
+    width: 96%;
+    margin-top: 1%;
     border-radius: 5px;
     border: 1px solid #E7E7E7;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.20);

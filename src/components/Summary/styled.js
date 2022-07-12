@@ -39,7 +39,7 @@ export const Span = styled.span`
     color: #5C5C5C;
     font-family: 'Quicksand', sans-serif;
     font-size: 0.85rem;
-    font-weight: 600;
+    font-weight: 400;
 `
 
 export const P = styled.p`
