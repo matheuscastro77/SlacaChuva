@@ -308,3 +308,48 @@ export const DivOptions = styled.div`
             font-size: 0.85rem;
     }
 `
+
+export const ContainerComment = styled.div`
+    background-color: #F8F8F8;
+    width: 96%;
+    margin-top: -2%;
+    margin-bottom: -1%;
+    font-family: 'Quicksand', sans-serif;
+    border: 1px solid #E7E7E7;
+
+    h4{
+        margin-left: 30px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: #5C5C5C;
+    }
+
+    p{
+        margin-left: 30px;
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: #4D4D4D;
+    }
+`
+
+export const ContainerComment2 = styled.div`
+    background-color: #F8F8F8;
+    width: 96%;
+    margin-bottom: 1%;
+    font-family: 'Quicksand', sans-serif;
+    border: 1px solid #E7E7E7;
+
+    h4{
+        margin-left: 30px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: #5C5C5C;
+    }
+
+    p{
+        margin-left: 30px;
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: #4D4D4D;
+    }
+`

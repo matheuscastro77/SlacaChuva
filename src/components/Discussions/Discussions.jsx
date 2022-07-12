@@ -22,7 +22,9 @@ import {
   TextArea,
   FooterTextArea,
   ContainerTopicSend,
-  FeedbackCard
+  FeedbackCard,
+  ContainerComment,
+  ContainerComment2
 } from "./styled";
 import icon1 from "../../assets/icone1.png";
 import icon2 from "../../assets/icone2.png";
@@ -33,61 +35,78 @@ import italico from "../../assets/italico.png";
 import negrito from "../../assets/negrito.png";
 import favoritar from "../../assets/favoritar.png";
 
-
 const Discussions = () => {
-  const { newTopic, setNewTopic, sendTopic, setSendTopic } =
-    useContext(GlobalStateContext);
+  const {
+    newTopic,
+    setNewTopic,
+    sendTopic,
+    setSendTopic,
+    comment1,
+    setComment1,
+    comment2,
+    setComment2,
+  } = useContext(GlobalStateContext);
 
-    const setState = () => {
-      setNewTopic(true)
-      setSendTopic(false)
-    }
+  const setState = () => {
+    setNewTopic(true);
+    setSendTopic(false);
+  };
 
   return (
     <Main>
       <TittleDiv>
         <H3>Discussões</H3>
       </TittleDiv>
-      {newTopic ? 
+      {newTopic ? (
         <>
-        {sendTopic ? <ContainerTopicSend>
-          <h2>Seu tópico foi enviado com sucesso! :D</h2>
-          <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
-          <ButtonFind>Descubra outros trabalhos!</ButtonFind>
-          <Border>
-            <ButtonFeedback onClick={() => setState ()}> criar novo tópico</ButtonFeedback>
-          </Border>
-          <FeedbackCard>
-
-          </FeedbackCard>
-        </ContainerTopicSend> : <> 
-          <P>
-            {" "}
-            Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores{" "}
-          </P>
-          <DivInput>
-            <Label>Assunto</Label>
-            <Input placeholder="Defina um tópico sucinto para notificar os autores..."></Input>
-            <Label>Conteúdo</Label>
-            <TextArea />
-            <ContainerOptionsComment>
-              <FooterTextArea>
-                <div>
-                  <button>
-                    <img src={negrito} />
-                  </button>
-                  <button>
-                    <img src={italico} />
-                  </button>
-                </div>
-              </FooterTextArea>
-              <SendButton onClick={() => setSendTopic(true)}>Enviar</SendButton>
-            </ContainerOptionsComment>
-          </DivInput>
-        </> }
-          
+          {sendTopic ? (
+            <ContainerTopicSend>
+              <h2>Seu tópico foi enviado com sucesso! :D</h2>
+              <p>
+                Agradecemos por sua contribuição, uma notificação será enviada
+                ao seu email assim que seu tópico for respondido!
+              </p>
+              <ButtonFind>Descubra outros trabalhos!</ButtonFind>
+              <Border>
+                <ButtonFeedback onClick={() => setState()}>
+                  {" "}
+                  criar novo tópico
+                </ButtonFeedback>
+              </Border>
+              <FeedbackCard></FeedbackCard>
+            </ContainerTopicSend>
+          ) : (
+            <>
+              <P>
+                {" "}
+                Tem uma dúvida ou sugestão? Compartilhe seu feedback com os
+                autores{" "}
+              </P>
+              <DivInput>
+                <Label>Assunto</Label>
+                <Input placeholder="Defina um tópico sucinto para notificar os autores..."></Input>
+                <Label>Conteúdo</Label>
+                <TextArea />
+                <ContainerOptionsComment>
+                  <FooterTextArea>
+                    <div>
+                      <button>
+                        <img src={negrito} />
+                      </button>
+                      <button>
+                        <img src={italico} />
+                      </button>
+                    </div>
+                  </FooterTextArea>
+                  <SendButton onClick={() => setSendTopic(true)}>
+                    Enviar
+                  </SendButton>
+                </ContainerOptionsComment>
+              </DivInput>
+            </>
+          )}
         </>
-       : 
+      ) : (
         <>
           <Container>
             <h3>Compartilhe suas ideias ou dúvidas com os autores!</h3>
@@ -109,7 +128,7 @@ const Discussions = () => {
             </Button>
           </Border>
         </>
-      }
+      )}
 
       <CommentsDiv>
         <DivCenter>
@@ -128,11 +147,22 @@ const Discussions = () => {
               <img src={favoritar} />
             </button>
             <p>1 like</p>
-            <button>1 reposta</button>
+            <button onClick={() => setComment1(!comment1)}>1 reposta</button>
           </DivOptions>
         </DivCenter>
       </CommentsDiv>
-
+      {comment1 ? (
+        <ContainerComment>
+          <h4>Adriano da Silva</h4>
+          <p>
+            Resposta do autor é aqui. Relato inscreve-se no campo da análise da
+            dimensão e impacto de processo formativo situado impacto de processo
+            formativo processo resente relato inscreve-se no campo da análise da
+            dimensão e impacto de processo formativo situado impacto de processo
+            formativo processo.
+          </p>
+        </ContainerComment>
+      ) : null}
       <CommentsDiv>
         <DivCenter>
           <h4>Assunto da pergunta aparece aqui</h4>
@@ -152,10 +182,39 @@ const Discussions = () => {
               <img src={favoritar} />
             </button>
             <p>4 like</p>
-            <button>4 reposta</button>
+            <button onClick={() => setComment2(!comment2)}>4 reposta</button>
           </DivOptions>
         </DivCenter>
       </CommentsDiv>
+      {comment2 ? (
+        <>
+          <ContainerComment>
+            <h4>Camila Ferreira Andrade</h4>
+            <p>
+              Também ínteressante lembrar que o relato inscreve-se no campo da
+              análise da dimensão e impacto de processo formativo situado
+              impacto de processo formativo processo resente relato inscreve-se
+              no campo da análise da dimensão e impacto de processo formativo
+              situado impacto de processo formativo processo.
+            </p>
+            <p>
+              Situado impacto de processo formativo processo resente relato
+              inscreve-se no campo da análise da dimensão e impacto de processo
+              formativo situado impacto de processo formativo processo.
+            </p>
+          </ContainerComment>
+          <ContainerComment2>
+            <h4>Ana Carolina</h4>
+            <p>
+              Resposta do autor é aqui. Relato inscreve-se no campo da análise
+              da dimensão e impacto de processo formativo situado impacto de
+              processo formativo processo resente relato inscreve-se no campo da
+              análise da dimensão e impacto de processo formativo situado
+              impacto de processo formativo processo.
+            </p>
+          </ContainerComment2>
+        </>
+      ) : null}
     </Main>
   );
 };
