@@ -21,12 +21,20 @@ export const Tittle = styled.div`
     margin-left: 3%;
 `
 
-export const P = styled.p`
-    margin: 5px 0px -2px 0px;
+export const H1 = styled.h1`
+    margin: 3px 0px -2px 0px;
     color: #725C5C;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
     font-size: 1.4rem;
+
+    @media screen and (max-width: 1366px){
+        font-size: 1.1rem;
+    }
+
+    @media screen and (max-width: 1280px){
+        font-size: 1.3rem;
+    }
 `
 
 export const Span = styled.span`
@@ -34,15 +42,45 @@ export const Span = styled.span`
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 0.9rem;
     font-weight: 600;
+
+    @media screen and (max-width: 1366px){
+        font-size: 0.8rem;
+    }
+
+    @media screen and (max-width: 1280px){
+        font-size: 0.9rem;
+    }
 `
 
 export const Container = styled.div`
-    margin-right: 3%;
+    margin-right: 2%;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 6vh;
     width: 22%;
+
+    @media screen and (max-width: 1680px){
+        width: 23%;
+    }
+
+    @media screen and (max-width: 1680px){
+        width: 25%;
+    }
+
+    @media screen and (max-width: 1440px){
+        width: 26%;
+    }
+
+    @media screen and (max-width: 1366px){
+        width: 26%;
+        margin-right: 1%;
+    }
+
+    @media screen and (max-width: 1280px){
+        width: 27%;
+        margin-right: 1%;
+    }
 `
 
 export const LanguageButton = styled.button`
@@ -59,6 +97,19 @@ export const LanguageButton = styled.button`
     :hover{
         cursor: pointer;
     }
+
+    @media screen and (max-width: 1440px){
+        font-size: 0.7rem;
+        width: 25%;
+    }
+
+    @media screen and (max-width: 1366px){
+        font-size: 0.6rem;
+    }
+    
+    @media screen and (max-width: 1280px){
+        height: 3vh;
+    }
 `
 
 export const P1 = styled.p`
@@ -67,6 +118,18 @@ export const P1 = styled.p`
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: right;
     font-size: 1rem;
+
+    @media screen and (max-width: 1440px){
+        font-size: 0.9rem;
+    }
+
+    @media screen and (max-width: 1366px){
+        font-size: 0.8rem;
+    }
+
+    @media screen and (max-width: 1280px){
+        font-size: 0.7rem;
+    }
 `
 
 export const P2 = styled.p`
@@ -75,6 +138,18 @@ export const P2 = styled.p`
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: right;
     font-size: 0.9rem;
+
+    @media screen and (max-width: 1440px){
+        font-size: 0.8rem;
+    }
+
+    @media screen and (max-width: 1366px){
+        font-size: 0.7rem;
+    }
+
+    @media screen and (max-width: 1280px){
+        font-size: 0.6rem;
+    }
 `
 
 export const Img = styled.img`

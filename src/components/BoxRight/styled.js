@@ -3,10 +3,34 @@ import styled from "styled-components";
 export const Main = styled.main`
   border: 1px solid #ececec;
   border-radius: 4px;
-  height: 68.5vh;
+  height: 60vh;
   width: 16%;
   margin-right: 5%;
-`;
+
+  @media screen and (max-width: 1768px){
+    height: 60.1vh;
+  }
+
+  @media screen and (max-width: 1680px){
+    height: 54vh;
+  }
+
+  @media screen and (max-width: 1600px){
+    height: 58.8vh;
+  }
+
+  @media screen and (max-width: 1440px){
+    height: 52.9vh;
+  }
+
+  @media screen and (max-width: 1366px){
+    height: 58.65vh;
+  }
+
+  @media screen and (max-width: 1280px){
+    height: 41.3vh;
+  }
+`
 
 export const H1 = styled.h1`
   background-color: #fdf1eb;
@@ -14,20 +38,35 @@ export const H1 = styled.h1`
   color: #4e4e4e;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  margin-top: 0px;
+  margin: 0px 0px 0px 0px;
   height: 6vh;
   font-weight: 500;
   padding-left: 10%;
   display: flex;
   align-items: center;
-`;
+  font-size: 1.7rem;
+
+  @media screen and (max-width: 1768px){
+    font-size: 1.8rem;
+  }
+
+  @media screen and (max-width: 1440px){
+    font-size: 1.5rem;
+    height: 5vh;
+  }
+
+  @media screen and (max-width: 1280px){
+    font-size: 1.4rem;
+    height: 4.5vh;
+  }
+`
 
 export const Text = styled.div`
   width: 90%;
   margin-right: 5%;
   margin-left: 5%;
   overflow-y: auto;
-  height: 60vh;
+  height: 53vh;
   font-family: 'Quicksand', sans-serif;
 
   ::-webkit-scrollbar-track {
@@ -41,7 +80,31 @@ export const Text = styled.div`
     background: #bfbfbf;
     border-radius: 5px;
   }
-`;
+
+  @media screen and (max-width: 1768px){
+    height: 53vh;
+  }
+
+  @media screen and (max-width: 1680px){
+    height: 47vh;
+  }
+
+  @media screen and (max-width: 1600px){
+    height: 51vh;
+  }
+
+  @media screen and (max-width: 1440px){
+    height: 46vh;
+  }
+
+  @media screen and (max-width: 1366px){
+    height: 52vh;
+  }
+
+  @media screen and (max-width: 1280px){
+    height: 36vh;
+  }
+`
 
 export const Span = styled.span`
   font-size: 0.75rem;

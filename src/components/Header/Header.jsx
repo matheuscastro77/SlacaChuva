@@ -1,5 +1,5 @@
 import React from "react";
-import { Main, Tittle, P, Span, Container, LanguageButton, P1, P2, ContainerMain, Img } from "./styled";
+import { Main, Tittle, H1, Span, Container, LanguageButton, P1, P2, ContainerMain, Img } from "./styled";
 import foto from '../../assets/person.png'
 import language from '../../assets/language.png'
 import dropdown from '../../assets/dropdown.png'
@@ -12,7 +12,7 @@ const Header = () => {
           <Span>
             Anais do Simpósio Latino Americano de Ciências de Alimentos
           </Span>
-          <P>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</P>
+          <H1>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</H1>
           <Span>ISSN: 1234-5678</Span>
         </Tittle>
         <Container>

@@ -43,6 +43,14 @@ export const ContainerTopicSend = styled.div`
         font-family: 'Quicksand', sans-serif;
         font-size: 0.9rem;
     }
+
+    @media screen and (max-width: 1680px){
+        height: 50vh;
+    }
+
+    @media screen and (max-width: 1280px){
+        height: 42vh;
+    }
 `
 
 export const ButtonFind = styled.button`
@@ -83,14 +91,40 @@ export const FeedbackCard = styled.div`
     background-image: url(${feedbackCard}) ;
     background-size: contain;
     width: 100%;
-    height: 29vh;
+    height: 22.6vh;
     margin: 1% auto;
+
+    @media screen and (max-width: 1768px){
+        height: 22.8vh;
+    }
+
+    @media screen and (max-width: 1680px){
+        height: 20.5vh;
+    }
+
+    @media screen and (max-width: 1600px){
+        height: 22.1vh;
+    }
+
+    @media screen and (max-width: 1440px){
+        height: 20vh;
+    }
+
+    @media screen and (max-width: 1366px){
+        height: 20vh;
+        width: 88%;
+    }
+
+
+    @media screen and (max-width: 1280px){
+        height: 15.5vh;
+    }
 `
 
 export const DivInput = styled.div`
     display: flex;
     flex-direction: column;
-    width: 98%;
+    width: 96%;
 `
 
 export const P = styled.p`
@@ -247,6 +281,18 @@ export const Button = styled.button`
     :hover{
         cursor: pointer;
     }
+
+    @media screen and (max-width: 1600px){
+        width: 11%;
+    }
+
+    @media screen and (max-width: 1440px){
+        width: 11%;
+    }
+
+    @media screen and (max-width: 1280px){
+        width: 12%;
+    }
 `
 
 export const CommentsDiv = styled.div`
@@ -306,6 +352,11 @@ export const DivOptions = styled.div`
         color: #757575;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 0.85rem;
+    }
+
+    
+    @media screen and (max-width: 1366px){
+        width: 17%;   
     }
 `
 

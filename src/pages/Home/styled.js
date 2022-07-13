@@ -13,17 +13,52 @@ export const ContainerInfo = styled.div`
 `
 
 export const H1 = styled.h1`
-    width: 65%;
+    width: 75%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.85rem;
     color: #ED7839;
     margin: 12px 0px 12px 0px;
+
+    @media screen and (max-width: 1600px){
+        width: 76%;
+        font-size: 1.65rem;
+    }
+
+    @media screen and (max-width: 1440px){
+        width: 80%;
+        font-size: 1.6rem;
+    }
+
+    @media screen and (max-width: 1440px){
+        width: 74%;
+        font-size: 1.3rem;
+    }
+
+    @media screen and (max-width: 1280px){
+        font-size: 1.2rem;
+    }
 `
 
 export const DivButtons = styled.div`
     display: flex;
-    width: 75%;
+    width: 85%;
     justify-content: space-between;
+
+    @media screen and (max-width: 1768px){
+        width: 85%;
+    }
+
+    @media screen and (max-width: 1680px){
+        width: 95%;
+    }
+
+    @media screen and (max-width: 1440px){
+        width: 95%;
+    }
+
+    @media screen and (max-width: 1280px){
+        width: 100%;
+    }
 `
 
 export const ContainerButtons = styled.div`
@@ -47,6 +82,19 @@ export const Button = styled.button`
     display: flex;
     padding: 9px;
     align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 1680px){
+        height: 3.5vh;
+    }
+
+    @media screen and (max-width: 1440px){
+        height: 3vh;
+    }
+
+    @media screen and (max-width: 1440px){
+        width: 17%;
+    }
 `
 
 export const ButtonDownload = styled.button`
@@ -62,13 +110,31 @@ export const ButtonDownload = styled.button`
     width: 60%;
     justify-content: space-around;
     align-items: center;
+
+    @media screen and (max-width: 1680px){
+        height: 3.5vh;
+    }
+
+    @media screen and (max-width: 1440px){
+        height: 3vh;
+        font-size: 1rem;
+        width: 58%;
+    }
 `
 
 export const H4 = styled.h4`
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 14px;
+    font-size: 1rem;
     color: #ED7839;
     margin: 8px 0px 8px 0px;
+
+    @media screen and (max-width: 1440px){
+        font-size: 0.8rem;
+    }
+
+    @media screen and (max-width: 1280px){
+        font-size: 0.75rem;
+    }
 `
 
 export const Container = styled.div`

@@ -7,6 +7,14 @@ export const Main = styled.main`
 
     img{
         width: 90%;
+
+        @media screen and (max-width: 1440px){
+            width: 95%;
+        }
+    }
+
+    @media screen and (max-width: 1600px){
+        width: 14.5%;
     }
 `
 
@@ -24,6 +32,17 @@ export const Tittle = styled.div`
         font-size: 2.2rem;
         font-weight: 700;
 
+        @media screen and (max-width: 1680px){
+            font-size: 2.0rem;
+        }
+
+        @media screen and (max-width: 1440px){
+            font-size: 1.8rem;
+        }
+
+        @media screen and (max-width: 1280px){
+            font-size: 1.6rem;
+        }
     }
 `
 
