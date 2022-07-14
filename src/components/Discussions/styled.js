@@ -44,12 +44,28 @@ export const ContainerTopicSend = styled.div`
         font-size: 0.9rem;
     }
 
+    @media screen and (max-width: 1768px){
+        height: 58vh;
+    }
+
     @media screen and (max-width: 1680px){
-        height: 50vh;
+        height: 53vh;
+    }
+
+    @media screen and (max-width: 1600px){
+        height: 51vh;
+    }
+
+    @media screen and (max-width: 1440px){
+        height: 55vh;
+    }
+
+    @media screen and (max-width: 1366px){
+        height: 64vh;
     }
 
     @media screen and (max-width: 1280px){
-        height: 42vh;
+        height: 51vh;
     }
 `
 
@@ -91,33 +107,31 @@ export const FeedbackCard = styled.div`
     background-image: url(${feedbackCard}) ;
     background-size: contain;
     width: 100%;
-    height: 22.6vh;
+    height: 25.7vh;
     margin: 1% auto;
 
     @media screen and (max-width: 1768px){
-        height: 22.8vh;
+        height: 26.1vh;
     }
 
     @media screen and (max-width: 1680px){
-        height: 20.5vh;
+        height: 23.4vh;
     }
 
     @media screen and (max-width: 1600px){
-        height: 22.1vh;
+        height: 22.5vh;
     }
 
     @media screen and (max-width: 1440px){
-        height: 20vh;
+        height: 23.5vh;
     }
 
     @media screen and (max-width: 1366px){
-        height: 20vh;
-        width: 88%;
+        height: 26.8vh;
     }
 
-
     @media screen and (max-width: 1280px){
-        height: 15.5vh;
+        height: 18vh;
     }
 `
 
@@ -233,7 +247,7 @@ export const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    height: 22vh;
+    min-height: 22vh;
 
     h3{
         color: #ED7839;
@@ -287,11 +301,11 @@ export const Button = styled.button`
     }
 
     @media screen and (max-width: 1440px){
-        width: 11%;
+        width: 12%;
     }
 
     @media screen and (max-width: 1280px){
-        width: 12%;
+        width: 13%;
     }
 `
 
@@ -351,12 +365,15 @@ export const DivOptions = styled.div`
     p{
         color: #757575;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 0.85rem;
+        font-size: 0.85rem;
     }
 
-    
-    @media screen and (max-width: 1366px){
+    @media screen and (max-width: 1440px){
         width: 17%;   
+    }
+
+    @media screen and (max-width: 1280px){
+        width: 18%;   
     }
 `
 

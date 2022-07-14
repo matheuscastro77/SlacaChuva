@@ -25,11 +25,6 @@ export const H1 = styled.h1`
     }
 
     @media screen and (max-width: 1440px){
-        width: 80%;
-        font-size: 1.6rem;
-    }
-
-    @media screen and (max-width: 1440px){
         width: 74%;
         font-size: 1.3rem;
     }
@@ -45,15 +40,15 @@ export const DivButtons = styled.div`
     justify-content: space-between;
 
     @media screen and (max-width: 1768px){
-        width: 85%;
+        width: 95%;
     }
 
     @media screen and (max-width: 1680px){
-        width: 95%;
+        width: 100%;
     }
 
     @media screen and (max-width: 1440px){
-        width: 95%;
+        width: 100%;
     }
 
     @media screen and (max-width: 1280px){
@@ -84,16 +79,23 @@ export const Button = styled.button`
     align-items: center;
     justify-content: center;
 
+    img{
+
+        @media screen and (max-width: 1366px){
+            width: 120%;
+        }
+        
+    }
+
     @media screen and (max-width: 1680px){
         height: 3.5vh;
     }
-
-    @media screen and (max-width: 1440px){
-        height: 3vh;
-    }
-
     @media screen and (max-width: 1440px){
         width: 17%;
+    }
+
+    @media screen and (max-width: 1280px){
+        height: 3vh;
     }
 `
 
@@ -116,9 +118,17 @@ export const ButtonDownload = styled.button`
     }
 
     @media screen and (max-width: 1440px){
-        height: 3vh;
         font-size: 1rem;
         width: 58%;
+    }
+
+    @media screen and (max-width: 1366px){
+        font-size: 0.90rem;
+    }
+
+    @media screen and (max-width: 1280px){
+        font-size: 0.80rem;
+        height: 3vh;
     }
 `
 
@@ -128,12 +138,20 @@ export const H4 = styled.h4`
     color: #ED7839;
     margin: 8px 0px 8px 0px;
 
+    @media screen and (max-width: 1600px){
+        font-size: 0.9rem;
+    }
+
     @media screen and (max-width: 1440px){
         font-size: 0.8rem;
     }
 
-    @media screen and (max-width: 1280px){
+    @media screen and (max-width: 1366px){
         font-size: 0.75rem;
+    }
+
+    @media screen and (max-width: 1280px){
+        font-size: 0.70rem;
     }
 `
 

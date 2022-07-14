@@ -3,32 +3,32 @@ import styled from "styled-components";
 export const Main = styled.main`
   border: 1px solid #ececec;
   border-radius: 4px;
-  height: 60vh;
+  height: 68.4vh;
   width: 16%;
   margin-right: 5%;
 
   @media screen and (max-width: 1768px){
-    height: 60.1vh;
+    height: 69.5vh;
   }
 
   @media screen and (max-width: 1680px){
-    height: 54vh;
+    height: 61.8vh;
   }
 
   @media screen and (max-width: 1600px){
-    height: 58.8vh;
+    height: 59.3vh;
   }
 
   @media screen and (max-width: 1440px){
-    height: 52.9vh;
+    height: 62vh;
   }
 
   @media screen and (max-width: 1366px){
-    height: 58.65vh;
+    height: 71.2vh;
   }
 
   @media screen and (max-width: 1280px){
-    height: 41.3vh;
+    height: 47.3vh;
   }
 `
 
@@ -51,12 +51,12 @@ export const H1 = styled.h1`
   }
 
   @media screen and (max-width: 1440px){
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     height: 5vh;
   }
 
   @media screen and (max-width: 1280px){
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     height: 4.5vh;
   }
 `
@@ -66,7 +66,7 @@ export const Text = styled.div`
   margin-right: 5%;
   margin-left: 5%;
   overflow-y: auto;
-  height: 53vh;
+  height: 62vh;
   font-family: 'Quicksand', sans-serif;
 
   ::-webkit-scrollbar-track {
@@ -82,27 +82,27 @@ export const Text = styled.div`
   }
 
   @media screen and (max-width: 1768px){
-    height: 53vh;
+    height: 62.5vh;
   }
 
   @media screen and (max-width: 1680px){
-    height: 47vh;
+    height: 55vh;
   }
 
   @media screen and (max-width: 1600px){
-    height: 51vh;
+    height: 53vh;
   }
 
   @media screen and (max-width: 1440px){
-    height: 46vh;
+    height: 56vh;
   }
 
   @media screen and (max-width: 1366px){
-    height: 52vh;
+    height: 65vh;
   }
 
   @media screen and (max-width: 1280px){
-    height: 36vh;
+    height: 42vh;
   }
 `
 

@@ -28,8 +28,12 @@ export const H1 = styled.h1`
     font-weight: 600;
     font-size: 1.4rem;
 
+    @media screen and (max-width: 1440px){
+        font-size: 1.2rem;
+    }
+
     @media screen and (max-width: 1366px){
-        font-size: 1.1rem;
+        font-size: 1.0rem;
     }
 
     @media screen and (max-width: 1280px){
@@ -43,8 +47,12 @@ export const Span = styled.span`
     font-size: 0.9rem;
     font-weight: 600;
 
-    @media screen and (max-width: 1366px){
+    @media screen and (max-width: 1440px){
         font-size: 0.8rem;
+    }
+
+    @media screen and (max-width: 1366px){
+        font-size: 0.7rem;
     }
 
     @media screen and (max-width: 1280px){
@@ -53,7 +61,7 @@ export const Span = styled.span`
 `
 
 export const Container = styled.div`
-    margin-right: 2%;
+    margin-right: 1%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,22 +72,20 @@ export const Container = styled.div`
         width: 23%;
     }
 
-    @media screen and (max-width: 1680px){
-        width: 25%;
+    @media screen and (max-width: 1600px){
+        width: 24%;
     }
 
     @media screen and (max-width: 1440px){
-        width: 26%;
+        width: 25%;
     }
 
     @media screen and (max-width: 1366px){
         width: 26%;
-        margin-right: 1%;
     }
 
     @media screen and (max-width: 1280px){
         width: 27%;
-        margin-right: 1%;
     }
 `
 
@@ -98,13 +104,20 @@ export const LanguageButton = styled.button`
         cursor: pointer;
     }
 
-    @media screen and (max-width: 1440px){
+    @media screen and (max-width: 1600px){
         font-size: 0.7rem;
         width: 25%;
+        height: 3.2vh;
+    }
+
+    @media screen and (max-width: 1440px){
+        font-size: 0.6rem;
+        width: 26%;
     }
 
     @media screen and (max-width: 1366px){
         font-size: 0.6rem;
+        height: 3.8vh;
     }
     
     @media screen and (max-width: 1280px){
@@ -119,12 +132,16 @@ export const P1 = styled.p`
     text-align: right;
     font-size: 1rem;
 
-    @media screen and (max-width: 1440px){
+    @media screen and (max-width: 1600px){
         font-size: 0.9rem;
     }
 
+    @media screen and (max-width: 1440px){
+        font-size: 0.85rem;
+    }
+
     @media screen and (max-width: 1366px){
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
 
     @media screen and (max-width: 1280px){
@@ -139,12 +156,16 @@ export const P2 = styled.p`
     text-align: right;
     font-size: 0.9rem;
 
-    @media screen and (max-width: 1440px){
+    @media screen and (max-width: 1600px){
         font-size: 0.8rem;
     }
 
+    @media screen and (max-width: 1440px){
+        font-size: 0.75rem;
+    }
+
     @media screen and (max-width: 1366px){
-        font-size: 0.7rem;
+        font-size: 0.65rem;
     }
 
     @media screen and (max-width: 1280px){
