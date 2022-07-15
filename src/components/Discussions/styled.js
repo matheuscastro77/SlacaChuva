@@ -61,7 +61,7 @@ export const ContainerTopicSend = styled.div`
     }
 
     @media screen and (max-width: 1366px){
-        height: 64vh;
+        height: 65vh;
     }
 
     @media screen and (max-width: 1280px){
@@ -127,7 +127,7 @@ export const FeedbackCard = styled.div`
     }
 
     @media screen and (max-width: 1366px){
-        height: 26.8vh;
+        height: 27vh;
     }
 
     @media screen and (max-width: 1280px){
