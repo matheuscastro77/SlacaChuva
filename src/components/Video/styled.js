@@ -37,6 +37,16 @@ export const VideoContainer = styled.div`
     @media screen and (max-width: 1280px){
         height: 50vh;
     }
+
+    @media screen and (max-width: 820px){
+        height: 28.2vh;
+        margin-bottom: 2%;
+    }    
+
+    @media screen and (max-width: 768px){
+        height: 30.4vh;
+        margin-bottom: 2%;
+    }  
 `
 
 export const H1 = styled.h1`

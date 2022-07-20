@@ -69,7 +69,6 @@ const Discussions = () => {
               <ButtonFind>Descubra outros trabalhos!</ButtonFind>
               <Border>
                 <ButtonFeedback onClick={() => setState()}>
-                  {" "}
                   criar novo tópico
                 </ButtonFeedback>
               </Border>

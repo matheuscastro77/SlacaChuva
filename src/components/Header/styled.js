@@ -39,6 +39,14 @@ export const H1 = styled.h1`
     @media screen and (max-width: 1280px){
         font-size: 1.3rem;
     }
+
+    @media screen and (max-width: 830px){
+        font-size: 1.15rem;
+    }
+
+    @media screen and (max-width: 820px) {
+        font-size: 1.05rem;
+    }
 `
 
 export const Span = styled.span`
@@ -57,6 +65,10 @@ export const Span = styled.span`
 
     @media screen and (max-width: 1280px){
         font-size: 0.9rem;
+    }
+
+    @media screen and (max-width: 820px) {
+        font-size: 0.8rem;
     }
 `
 
@@ -123,6 +135,11 @@ export const LanguageButton = styled.button`
     @media screen and (max-width: 1280px){
         height: 3vh;
     }
+
+    @media screen and (max-width: 820px){
+        height: 2.5vh;
+        width: 56%;
+    }
 `
 
 export const P1 = styled.p`
@@ -147,6 +164,10 @@ export const P1 = styled.p`
     @media screen and (max-width: 1280px){
         font-size: 0.7rem;
     }
+
+    @media screen and (max-width: 820px){
+        display: none;
+    }
 `
 
 export const P2 = styled.p`
@@ -170,6 +191,10 @@ export const P2 = styled.p`
 
     @media screen and (max-width: 1280px){
         font-size: 0.6rem;
+    }
+
+    @media screen and (max-width: 820px){
+        display: none;
     }
 `
 

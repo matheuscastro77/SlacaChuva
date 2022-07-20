@@ -40,10 +40,18 @@ export const Span = styled.span`
     font-family: 'Quicksand', sans-serif;
     font-size: 0.85rem;
     font-weight: 400;
+
+    @media screen and (max-width: 820px) {
+    font-size: 0.95rem;
+    }
 `
 
 export const P = styled.p`
     font-size: 0.85rem;
+
+    @media screen and (max-width: 820px) {
+    font-size: 0.95rem;
+    }
 `
 
 export const Button = styled.button`
@@ -54,4 +62,6 @@ export const Button = styled.button`
     font-size: 0.9rem;
     font-weight: 700;
     margin-left: 1%;
+
+    
 `

@@ -16,6 +16,10 @@ export const Main = styled.main`
     @media screen and (max-width: 1600px){
         width: 14.5%;
     }
+
+    @media screen and (max-width: 820px){
+        width: 24%;
+    }
 `
 
 export const Tittle = styled.div`

@@ -31,4 +31,12 @@ export const Main = styled.div`
     @media screen and (max-width: 1280px){
         height: 19.7vh;
     }
+
+    @media screen and (max-width: 820px) {
+        height: 8.7vh;
+    }
+
+    @media screen and (max-width: 768px) {
+        height: 9.5vh;
+    }
 `
