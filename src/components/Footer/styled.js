@@ -39,4 +39,16 @@ export const Main = styled.div`
     @media screen and (max-width: 768px) {
         height: 9.5vh;
     }
+
+    @media screen and (max-height: 800px) {
+        height: 21.8vh;
+    }
+
+    @media screen and (max-height: 600px) {
+        height: 23.2vh;
+    }
+
+    @media screen and (max-width: 414px) {
+        height: 5.5vh;
+    }
 `

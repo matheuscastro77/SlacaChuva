@@ -5,13 +5,6 @@ export const Main = styled.main`
     display: flex;
 `
 
-export const ContainerInfo = styled.div`
-    margin-left: 3%;
-    width: 92%;
-    display: flex;
-    justify-content: space-between;
-`
-
 export const H1 = styled.h1`
     width: 75%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -41,6 +34,11 @@ export const Container = styled.div`
     margin-bottom: 2%;
 
     @media screen and (max-width: 820px){
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media screen and (max-height: 600px) {
         display: flex;
         flex-direction: column;
     }

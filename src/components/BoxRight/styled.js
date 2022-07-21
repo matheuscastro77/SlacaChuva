@@ -10,6 +10,11 @@ export const Main = styled.div`
     width: 94%;
     margin: 2% 3%;
   }
+
+  @media screen and (max-height: 600px) {
+    width: 94%;
+    margin: 2% 3%;
+  }
 `;
 
 export const DivButtons = styled.div`
@@ -36,6 +41,14 @@ export const DivButtons = styled.div`
   @media screen and (max-width: 820px) {
     justify-content: space-evenly;
   }
+
+  @media screen and (max-height: 600px) {
+    justify-content: space-evenly;
+  }
+
+  @media screen and (max-width: 414px) {
+    width: 95%;
+  }
 `;
 
 export const ContainerButtons = styled.div`
@@ -50,7 +63,17 @@ export const ContainerButtons = styled.div`
     width: 50%;
     margin: 0 auto;
   }
-`
+
+  @media screen and (max-height: 600px) {
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 414px) {
+    width: 50%;
+    align-items: center;
+  }
+`;
 
 export const Button = styled.button`
   border: 0px;
@@ -75,6 +98,14 @@ export const Button = styled.button`
     @media screen and (max-width: 820px) {
       width: 70%;
     }
+
+    @media screen and (max-height: 600px) {
+      width: 60%;
+    }
+
+    @media screen and (max-width: 414px) {
+      width: 280%;
+    }
   }
 
   @media screen and (max-width: 1680px) {
@@ -96,7 +127,11 @@ export const Button = styled.button`
   @media screen and (max-width: 820px) {
     height: 2.5vh;
   }
-`
+
+  @media screen and (max-height: 600px) {
+    height: 3.5vh;
+  }
+`;
 
 export const ButtonDownload = styled.button`
   border: 0px;
@@ -112,6 +147,12 @@ export const ButtonDownload = styled.button`
   width: 60%;
   justify-content: space-around;
   align-items: center;
+
+  img{
+    @media screen and (max-width: 414px) {
+      width: 19%;
+    }
+  }
 
   @media screen and (max-width: 1680px) {
     height: 3.5vh;
@@ -138,7 +179,17 @@ export const ButtonDownload = styled.button`
     height: 2.5vh;
     width: 45%;
   }
-`
+
+  @media screen and (max-height: 600px) {
+    width: 50%;
+    height: 3.5vh;
+  }
+
+  @media screen and (max-width: 414px) {
+    width: 60%;
+    font-size: 0.7rem;
+  }
+`;
 
 export const H4Tittle = styled.h4`
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -169,6 +220,17 @@ export const H4Tittle = styled.h4`
     text-align: center;
     font-size: 0.9rem;
     width: 95%;
+  }
+
+  @media screen and (max-height: 600px) {
+    text-align: center;
+    font-size: 0.9rem;
+    width: 95%;
+  }
+
+  @media screen and (max-width: 414px) {
+    font-size: 0.65rem;
+    width: 125%;
   }
 `;
 
@@ -206,6 +268,14 @@ export const Container = styled.main`
     width: 100%;
     height: 35vh;
   }
+
+  @media screen and (max-height: 800px) {
+    height: 55.1vh;
+  }
+
+  @media screen and (max-height: 600px) {
+    width: 100%;
+  }
 `;
 
 export const H1 = styled.h1`
@@ -242,12 +312,19 @@ export const H1 = styled.h1`
   @media screen and (max-width: 820px) {
     padding-left: 2%;
   }
+
+  @media screen and (max-height: 600px) {
+    padding-left: 2%;
+  }
+
+  @media screen and (max-width: 414px) {
+    font-size: 1rem;
+  }
 `;
 
 export const Text = styled.div`
   width: 90%;
-  margin-right: 5%;
-  margin-left: 5%;
+  margin: 0 auto;
   overflow-y: auto;
   height: 62vh;
   font-family: "Quicksand", sans-serif;
@@ -291,6 +368,14 @@ export const Text = styled.div`
   @media screen and (max-width: 820px) {
     height: 30vh;
   }
+
+  @media screen and (max-height: 800px) {
+    height: 50.1vh;
+  }
+
+  @media screen and (max-height: 600px) {
+    width: 95%;
+  }
 `;
 
 export const Span = styled.span`
@@ -301,6 +386,10 @@ export const Span = styled.span`
   @media screen and (max-width: 820px) {
     font-size: 0.9rem;
   }
+
+  @media screen and (max-width: 414px) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const P1 = styled.p`
@@ -309,6 +398,10 @@ export const P1 = styled.p`
 
   @media screen and (max-width: 820px) {
     font-size: 0.9rem;
+  }
+
+  @media screen and (max-width: 414px) {
+    font-size: 0.8rem;
   }
 `;
 
@@ -321,6 +414,10 @@ export const H4 = styled.h4`
   @media screen and (max-width: 820px) {
     font-size: 1rem;
   }
+
+  @media screen and (max-width: 414px) {
+    font-size: 0.9rem;
+  }
 `;
 
 export const H5 = styled.h5`
@@ -332,6 +429,10 @@ export const H5 = styled.h5`
 
   @media screen and (max-width: 820px) {
     font-size: 1rem;
+  }
+
+  @media screen and (max-width: 414px) {
+    font-size: 0.9rem;
   }
 `;
 

@@ -47,6 +47,10 @@ export const Tittle = styled.div`
         @media screen and (max-width: 1280px){
             font-size: 1.6rem;
         }
+
+        @media screen and (max-width: 414px) {
+            font-size: 1.05rem;
+        }
     }
 `
 
@@ -69,6 +73,10 @@ export const Button = styled.button`
         background-color: #FDF1EB;
         border-left: 4px solid #ED7839 ;
     }
+
+    @media screen and (max-width: 414px) {
+        font-size: 0.9rem;
+    }
 `
 
 export const SelectButton = styled.button`
@@ -83,5 +91,9 @@ export const SelectButton = styled.button`
 
     :hover{
         cursor: pointer;
+    }
+
+    @media screen and (max-width: 414px) {
+        font-size: 0.9rem;
     }
 `

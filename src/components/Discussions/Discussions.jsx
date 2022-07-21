@@ -72,7 +72,7 @@ const Discussions = () => {
                   criar novo tópico
                 </ButtonFeedback>
               </Border>
-              <FeedbackCard></FeedbackCard>
+              <FeedbackCard/>
             </ContainerTopicSend>
           ) : (
             <>

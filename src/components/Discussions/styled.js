@@ -44,6 +44,10 @@ export const ContainerTopicSend = styled.div`
     @media screen and (max-width: 820px) {
       font-size: 1rem;
     }
+
+    @media screen and (max-width: 414px) {
+      font-size: 0.85rem;
+    }
   }
 
   p {
@@ -56,6 +60,10 @@ export const ContainerTopicSend = styled.div`
       font-size: 0.8rem;
       width: 75%;
       text-align: center;
+    }
+
+    @media screen and (max-width: 414px) {
+      font-size: 0.7rem;
     }
   }
 
@@ -87,9 +95,13 @@ export const ContainerTopicSend = styled.div`
     height: 25vh;
   }
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     height: 30vh;
-  } 
+  }
+
+  @media screen and (max-height: 600px) {
+    height: 65.2vh;
+  }
 `;
 
 export const ButtonFind = styled.button`
@@ -108,6 +120,10 @@ export const ButtonFind = styled.button`
 
   @media screen and (max-width: 820px) {
     font-size: 0.8rem;
+  }
+
+  @media screen and (max-width: 414px) {
+    font-size: 0.7rem;
   }
 `;
 
@@ -135,9 +151,21 @@ export const ButtonFeedback = styled.button`
     font-size: 0.85rem;
   }
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     width: 25%;
-  } 
+  }
+
+  @media screen and (max-height: 600px) {
+    width: 22%;
+    font-size: 1rem;
+    height: 4vh;
+  }
+
+  @media screen and (max-width: 414px) {
+    width: 37%;
+    font-size: 0.7rem;
+    height: 2.5vh;
+  }
 `;
 
 export const FeedbackCard = styled.div`
@@ -175,9 +203,21 @@ export const FeedbackCard = styled.div`
     height: 7.8vh;
   }
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     height: 8.5vh;
-  } 
+  }
+
+  @media screen and (max-height: 800px) {
+    height: 19.8vh;
+  }
+
+  @media screen and (max-height: 600px) {
+    height: 21vh;
+  }
+
+  @media screen and (max-width: 414px) {
+    height: 5vh;
+  }
 `;
 
 export const DivInput = styled.div`
@@ -191,16 +231,25 @@ export const P = styled.p`
   font-size: 0.9rem;
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
+  margin-left: 2%;
+
+  @media screen and (max-width: 414px) {
+    font-size: 0.75rem;
+  }
 `;
 
 export const Label = styled.label`
   color: #ed7839;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-bottom: 0.3%;
   margin-top: 1%;
+
+  @media screen and (max-width: 414px) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const Input = styled.input`
@@ -210,12 +259,16 @@ export const Input = styled.input`
   height: 2vh;
   padding: 10px 10px 10px 20px;
   outline: 0px;
-  font-size: 14px;
+  font-size: 0.9rem;
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
 
   ::placeholder {
     color: #4d4d4d;
+  }
+
+  @media screen and (max-width: 414px) {
+    font-size: 0.8rem;
   }
 `;
 
@@ -251,6 +304,10 @@ export const FooterTextArea = styled.div`
       width: 15%;
     }
 
+    @media screen and (max-width: 820px) {
+      width: 25%;
+    }
+
     button {
       background-color: transparent;
       border: 0px;
@@ -274,12 +331,17 @@ export const SendButton = styled.button`
   font-family: "Quicksand", sans-serif;
   color: white;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 0.95rem;
   border-radius: 0px 0px 3px 0px;
 
   :hover {
     cursor: pointer;
   }
+
+  @media screen and (max-width: 820px) {
+      width: 25%;
+      font-size: 0.85rem;
+    }
 `;
 
 export const H3 = styled.h3`
@@ -289,6 +351,10 @@ export const H3 = styled.h3`
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.3rem;
   font-weight: 600;
+
+  @media screen and (max-width: 414px) {
+    font-size: 1rem;
+  }
 `;
 
 export const Container = styled.div`
@@ -309,18 +375,30 @@ export const Container = styled.div`
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 1.1rem;
+
+    @media screen and (max-width: 414px) {
+      font-size: 0.9rem;
+    }
   }
 
   p {
     font-family: "Quicksand", sans-serif;
     font-size: 0.9rem;
+
+    @media screen and (max-width: 414px) {
+      font-size: 0.75rem;
+    }
   }
 `;
 
 export const DivIcons = styled.div`
-  width: 40%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
+
+  img {
+    width: 22%;
+  }
 `;
 
 export const Border = styled.div`
@@ -352,6 +430,10 @@ export const Button = styled.button`
     cursor: pointer;
   }
 
+  img {
+    width: 15%;
+  }
+
   @media screen and (max-width: 1600px) {
     width: 11%;
   }
@@ -369,6 +451,18 @@ export const Button = styled.button`
     font-size: 1rem;
     height: 3vh;
   }
+
+  @media screen and (max-height: 600px) {
+    width: 18%;
+    font-size: 1rem;
+    height: 4vh;
+  }
+
+  @media screen and (max-width: 414px) {
+    width: 34%;
+    font-size: 0.7rem;
+    height: 2.5vh;
+  }
 `;
 
 export const CommentsDiv = styled.div`
@@ -385,17 +479,33 @@ export const CommentsDiv = styled.div`
     font-size: 1rem;
     margin-bottom: 5px;
     font-weight: bold;
+
+    @media screen and (max-width: 414px) {
+      font-size: 0.8rem;
+    }
   }
 
   h5 {
     color: #5c5c5c;
     font-size: 0.8rem;
     margin-top: 2px;
+
+    @media screen and (max-width: 414px) {
+      font-size: 0.7rem;
+    }
   }
 
   p {
     color: #4d4d4d;
     font-size: 0.9rem;
+
+    @media screen and (max-width: 414px) {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media screen and (max-width: 414px) {
+    margin-top: 5%;
   }
 `;
 
@@ -422,12 +532,26 @@ export const DivOptions = styled.div`
     :hover {
       cursor: pointer;
     }
+
+    img{
+      @media screen and (max-width: 414px) {
+        width: 80%;
+      }
+    }
+
+    @media screen and (max-width: 414px) {
+      font-size: 0.7rem;
+    }
   }
 
   p {
     color: #757575;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 0.85rem;
+
+    @media screen and (max-width: 414px) {
+      font-size: 0.7rem;
+    }
   }
 
   @media screen and (max-width: 1440px) {
@@ -440,6 +564,14 @@ export const DivOptions = styled.div`
 
   @media screen and (max-width: 820px) {
     width: 32%;
+  }
+
+  @media screen and (max-height: 600px) {
+    width: 23%;
+  }
+
+  @media screen and (max-width: 414px) {
+    width: 56%;
   }
 `;
 
@@ -456,6 +588,10 @@ export const ContainerComment = styled.div`
     font-size: 0.8rem;
     font-weight: 700;
     color: #5c5c5c;
+
+    @media screen and (max-width: 414px) {
+      font-size: 0.7rem;
+    }
   }
 
   p {
@@ -463,6 +599,10 @@ export const ContainerComment = styled.div`
     font-size: 0.9rem;
     font-weight: 400;
     color: #4d4d4d;
+
+    @media screen and (max-width: 414px) {
+      font-size: 0.8rem;
+    }
   }
 `;
 
