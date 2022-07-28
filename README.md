@@ -9,7 +9,7 @@
 Slaca Chuva é um desafio proposto pela [Chuva](https://chuva.net.br/). É um site onde o exemplo e layout do figma deve ser seguido, com algumas funcionabilidades simples e responsivo.
 
 ## Link
-[Link](hhttps://slaca-chuva.vercel.app/)
+[Chuva](https://slaca-chuva.vercel.app/)
 
 ## Website
 ### Home
