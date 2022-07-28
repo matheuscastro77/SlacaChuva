@@ -106,6 +106,14 @@ export const Button = styled.button`
     @media screen and (max-width: 414px) {
       width: 280%;
     }
+
+    @media screen and (max-width: 375px) {
+      width: 400%;
+    }
+
+    @media screen and (max-width: 360px) {
+      width: 650%;
+    }
   }
 
   @media screen and (max-width: 1680px) {
@@ -131,6 +139,10 @@ export const Button = styled.button`
   @media screen and (max-height: 600px) {
     height: 3.5vh;
   }
+
+  @media screen and (max-width: 375px) {
+    height: 3.25vh;
+  }
 `;
 
 export const ButtonDownload = styled.button`
@@ -148,7 +160,7 @@ export const ButtonDownload = styled.button`
   justify-content: space-around;
   align-items: center;
 
-  img{
+  img {
     @media screen and (max-width: 414px) {
       width: 19%;
     }
@@ -188,6 +200,10 @@ export const ButtonDownload = styled.button`
   @media screen and (max-width: 414px) {
     width: 60%;
     font-size: 0.7rem;
+  }
+
+  @media screen and (max-width: 375px) {
+    height: 3.25vh;
   }
 `;
 

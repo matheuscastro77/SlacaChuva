@@ -57,6 +57,11 @@ export const H1 = styled.h1`
   @media screen and (max-width: 414px) {
     font-size: 0.75rem;
   }
+
+  @media screen and (max-width: 375px) {
+    font-size: 0.58rem;
+    margin: 0px;
+  }
 `;
 
 export const Span = styled.span`
@@ -88,6 +93,10 @@ export const Span = styled.span`
 
   @media screen and (max-width: 414px) {
     font-size: 0.6rem;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 0.48rem;
   }
 `;
 
@@ -181,6 +190,11 @@ export const LanguageButton = styled.button`
     width: 90%;
     font-size: 0.5rem;
   }
+
+  @media screen and (max-width: 375px) {
+    height: 3.2vh;
+    width: 95%;
+  }
 `;
 
 export const P1 = styled.p`
@@ -255,5 +269,9 @@ export const Img = styled.img`
 
   @media screen and (max-width: 414px) {
     width: 50%;
+  }
+
+  @media screen and (max-width: 375px) {
+    width: 40%;
   }
 `;

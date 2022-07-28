@@ -51,4 +51,8 @@ export const Main = styled.div`
     @media screen and (max-width: 414px) {
         height: 5.5vh;
     }
+
+    @media screen and (max-width: 375px) {
+        height: 6.5vh;
+    }
 `

@@ -49,7 +49,15 @@ export const Tittle = styled.div`
         }
 
         @media screen and (max-width: 414px) {
-            font-size: 1.05rem;
+            font-size: 1.0rem;
+        }
+
+        @media screen and (max-width: 375px) {
+            font-size: 0.95rem;
+        }
+
+        @media screen and (max-width: 360px) {
+            font-size: 0.9rem;
         }
     }
 `
@@ -77,6 +85,10 @@ export const Button = styled.button`
     @media screen and (max-width: 414px) {
         font-size: 0.9rem;
     }
+
+    @media screen and (max-width: 375px) {
+        font-size: 0.8rem;
+    }
 `
 
 export const SelectButton = styled.button`
@@ -95,5 +107,9 @@ export const SelectButton = styled.button`
 
     @media screen and (max-width: 414px) {
         font-size: 0.9rem;
+    }
+
+    @media screen and (max-width: 375px) {
+        font-size: 0.8rem;
     }
 `

@@ -48,6 +48,10 @@ export const ContainerTopicSend = styled.div`
     @media screen and (max-width: 414px) {
       font-size: 0.85rem;
     }
+
+    @media screen and (max-width: 360px) {
+      font-size: 0.75rem;
+    }
   }
 
   p {
@@ -101,6 +105,10 @@ export const ContainerTopicSend = styled.div`
 
   @media screen and (max-height: 600px) {
     height: 65.2vh;
+  }
+
+  @media screen and (max-width: 375px) {
+    height: 32vh;
   }
 `;
 
@@ -162,10 +170,17 @@ export const ButtonFeedback = styled.button`
   }
 
   @media screen and (max-width: 414px) {
-    width: 37%;
+    width: 40%;
     font-size: 0.7rem;
     height: 2.5vh;
   }
+
+  @media screen and (max-width: 375px) {
+    width: 45%;
+    height: 2.8vh;
+  }
+
+  
 `;
 
 export const FeedbackCard = styled.div`
@@ -217,6 +232,14 @@ export const FeedbackCard = styled.div`
 
   @media screen and (max-width: 414px) {
     height: 5vh;
+  }
+
+  @media screen and (max-width: 375px) {
+    height: 6vh;
+  }
+
+  @media screen and (max-width: 360px) {
+    height: 5.2vh;
   }
 `;
 
@@ -572,6 +595,10 @@ export const DivOptions = styled.div`
 
   @media screen and (max-width: 414px) {
     width: 56%;
+  }
+
+  @media screen and (max-width: 375px) {
+    width: 66%;
   }
 `;
 
