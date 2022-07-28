@@ -420,7 +420,7 @@ export const DivIcons = styled.div`
   justify-content: space-between;
 
   img {
-    width: 22%;
+    min-width: 10%;
   }
 `;
 
