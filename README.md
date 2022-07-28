@@ -12,10 +12,9 @@ Slaca Chuva é um desafio proposto pela [Chuva](https://chuva.net.br/). É um si
 [Link](hhttps://slaca-chuva.vercel.app/)
 
 ## Website
-### Página Inicial
-![inicialPage](https://user-images.githubusercontent.com/94663972/173931319-b6eb8146-21c7-4329-865b-7fc519eb0a4a.png)
-### Map
-![map](https://user-images.githubusercontent.com/94663972/173970374-2a36295a-ef6a-41c9-a6e3-008c65975aa8.png)
+### Home
+![Home](https://user-images.githubusercontent.com/94663972/181631081-e2dcf320-f7fa-4208-a38f-94957d8a4f04.png)
+
 
 
 ## Lista com linguagens, framework e/ou tecnologias usadas
