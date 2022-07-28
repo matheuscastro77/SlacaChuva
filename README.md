@@ -32,7 +32,7 @@ Visual Studio Code
 ## Como instalar o projeto
 
 ## 1 - Clonar o repositório
-	- git clone https://github.com/matheuscastro77/Challenge-Covid-Daily.git
+	- git clone https://github.com/matheuscastro77/SlacaChuva.git
 ## 2 - Instalar as dependências
   	- npm install      
 ## 3 - Iniciar o projeto
