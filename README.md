@@ -4,6 +4,8 @@
 
 ## Projeto Individual
 
+#ESTOU CIENTE DOS PROBLEMAS DE REPONSIVIDADE, IREI ARRUMAR ASSIM QUE POSSÍVEL
+
 # Sobre o Projeto 
 
 Slaca Chuva é um desafio proposto pela [Chuva](https://chuva.net.br/). É um site onde o exemplo e layout do figma deve ser seguido, com algumas funcionabilidades simples e responsivo.
